@@ -5,20 +5,21 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+  --background: #f5f1e6; /* 复古米色背景，带有纸张质感 */
+  --foreground: #3a2e21; /* 深棕色文字，类似老印刷品 */
+  --accent: #a62c2b; /* 复古暗红色作为强调色 */
+  --muted: #e8e0d0; /* 浅米色作为次要背景 */
+  --border: #d1c6b0; /* 浅棕色边框，呈现做旧感 */
 }
 
 html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --muted: #343f60;
-  --border: #ab4b08;
+  --background: #2c2418; /* 深棕黑色背景，类似老木头 */
+  --foreground: #e6d9c3; /* 暖米色文字，提高可读性 */
+  --accent: #d4a024; /* 复古金色作为强调色 */
+  --muted: #433726; /* 深棕色次要背景 */
+  --border: #8b7857; /* 棕褐色边框，增加复古感 */
 }
+
 
 @theme inline {
   --color-background: var(--background);
