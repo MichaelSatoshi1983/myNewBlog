@@ -30,4 +30,6 @@ _worker.js
 _routes.json
 ```
 
+> 在 `public` 文件夹下面即可
+
 然后再执行构建就可以了，
