@@ -3,8 +3,7 @@ import { ClientRouter } from "astro:transitions";
 import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
 import { SITE } from "@/config";
 import "@/styles/global.css";
-import { SpeedInsights } from '@vercel/speed-insights/next';
-
+import SpeedInsights from '@vercel/speed-insights/astro';
 export interface Props {
   title?: string;
   author?: string;
@@ -55,6 +54,8 @@ const structuredData = {
   class={`${scrollSmooth && "scroll-smooth"}`}
 >
   <head>
+        <SpeedInsights />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -134,7 +135,6 @@ const structuredData = {
     <script is:inline src="/toggle-theme.js"></script>
   </head>
   <body>
-            <SpeedInsights />
     <slot />
   </body>
 </html>
