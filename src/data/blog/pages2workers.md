@@ -1,7 +1,7 @@
 ---
 title: "把博客从 Pages 迁移到 Workers"
-date: "2025-07-21 12:19:23"
-pubDatetime: 2025-07-21 12:19:23
+date: "2025-07-21 00:19:23"
+pubDatetime: 2025-07-21 00:19:23
 description: "记录了 Astro 博客从 Cloudflare Pages 迁移到 Cloudflare Workers。"
 tags: ["博客搭建记录"]
 ---
