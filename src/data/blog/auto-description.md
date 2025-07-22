@@ -2,7 +2,7 @@
 title: "Astro 自动生成文章摘要"
 date: "2025-07-22 22:01:14"
 pubDatetime: 2025-07-22 22:01:14
-description: "介绍了 Astro 博客怎么自动生成文章摘要"
+description: "介绍了 Astro 博客怎么自动生成文章摘要。"
 tags: ["博客搭建记录"]
 ---
 像我这种懒人，很讨厌写摘要啊介绍啊之类的，而 SEO 又必须写，所以只好写一个 Python 脚本去完成这个事情了：
