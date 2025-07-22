@@ -1,7 +1,7 @@
 ---
 title: "编译？起飞！"
-date: "2025-07-12 00:11:45"
-pubDatetime: 2025-07-12 00:11:45
+date: "2025-07-12"
+pubDatetime: 2025-07-12
 description: "介绍了 Go 的编译速度为什么快。"
 tags: ["Go 牛逼之路"]
 ---

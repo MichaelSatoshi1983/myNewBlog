@@ -1,7 +1,7 @@
 ---
 title: "从 GMP 模型读懂并发的优雅"
-date: "2025-07-04 00:28:33"
-pubDatetime: 2025-07-04 00:28:33
+date: "2025-07-04"
+pubDatetime: 2025-07-04
 description: "介绍了 Go 语言中 context 包的设计原理与实现机制 "
 tags: ["Go 牛逼之路"]
 ---

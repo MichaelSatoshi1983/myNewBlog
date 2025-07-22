@@ -1,7 +1,7 @@
 ---
 title: "Go的连续栈设计"
-date: "2024-11-13 08:24:14"
-pubDatetime: 2024-11-13 08:24:14
+date: "2024-11-13"
+pubDatetime: 2024-11-13
 description: "介绍Go的连续栈其核心机制，以及它好在哪里，坏在哪里。"
 tags: ["Go"]
 ---

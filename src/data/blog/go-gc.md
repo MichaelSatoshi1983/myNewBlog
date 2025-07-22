@@ -1,7 +1,7 @@
 ---
 title: "从 1 秒到微秒：Go 垃圾回收的优化之路"
-date: "2025-07-09 00:33:30"
-pubDatetime: 2025-07-09 00:33:30
+date: "2025-07-09"
+pubDatetime: 2025-07-09
 description: "介绍了 Go GC 的优化之路和发展历程。"
 tags: ["Go 牛逼之路"]
 ---

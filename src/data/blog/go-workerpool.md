@@ -1,7 +1,7 @@
 ---
 title: "Go 的 Worker Pool"
-date: "2025-06-29 20:27:23"
-pubDatetime: 2025-06-29 20:27:23
+date: "2025-06-29"
+pubDatetime: 2025-06-29
 description: "介绍了 Go 语言中 Worker Pool（工作池）模式的设计与实现 然后构建了一个功能更完善、性能更优的“牛逼 Worker Pool”。"
 tags: ["Go"]
 ---

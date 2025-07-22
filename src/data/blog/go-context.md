@@ -1,7 +1,7 @@
 ---
 title: "Go Context 控制并发的核心机制"
-date: "2025-03-22 15:12:14"
-pubDatetime: 2025-03-22 15:12:14
+date: "2025-03-22"
+pubDatetime: 2025-03-22
 description: "介绍了 Go 语言中 context 包的设计原理与实现机制 "
 tags: ["Go 牛逼之路"]
 ---
