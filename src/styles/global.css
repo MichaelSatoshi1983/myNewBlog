@@ -4,17 +4,14 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 
-@font-face {
-  font-family: 'FZPXYS';
-  src: url('https://static.byte.beer/fangzhengpingxianyasong.subset.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import"https://chinese-fonts-cdn.deno.dev/packages/sypxzs/dist/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B/result.css"; 
+
+
 
 /* 全局设置 FZPXYS 字体 */
 * {
-  font-family: 'FZPXYS', sans-serif !important;
+    font-family:'Source Han Serif CN for Display' !important;
+    font-weight:'400'
 }
 
 /* 为所有代码相关元素重置为等宽字体 */
