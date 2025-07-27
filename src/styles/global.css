@@ -4,21 +4,9 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 
-
-
-/* 按方正字体形式精简思源宋体引用 */
-@font-face {
-  font-family: 'SourceHanSerif'; /* 自定义简洁英文名（避免中文/空格问题） */
-  src: url('//at.alicdn.com/wf/webfont/7tll2ML4x6vV/RzyBkE403rqU.woff2') format('woff2');
-  font-weight: normal; /* 400 等价于 normal */
-  font-style: normal;
-  font-variation-settings: normal; /* 必须保留！Chrome 140 以下版本需要 */
-  font-display: swap;
-}
-
-/* 全局应用思源宋体 */
+/* 全局设置 FZPXYS 字体 */
 * {
-  font-family: 'SourceHanSerif', sans-serif !important;
+    font-family:'Source Han Serif CN for Display' !important;
 }
 
 /* 为所有代码相关元素重置为等宽字体 */
