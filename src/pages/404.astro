@@ -1,85 +1,30 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <!-- 预连接到字体CDN -->
-    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- 预加载关键字体文件 -->
-    <link rel="preload" href="https://fonts.cdnfonts.com/s/15449/IBMPlexSans-Regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="https://fonts.cdnfonts.com/s/15449/IBMPlexSans-Bold.woff" as="font" type="font/woff" crossorigin>
-    
-    <!-- 字体样式引入 -->
-    <link href="https://fonts.cdnfonts.com/css/ibm-plex-sans" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>二维码页面</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #000000; /* 深蓝色背景 */
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .qr-container {
-            text-align: center;
-        }
-        
-        .qr-code-container {
-            width: 300px;
-            height: 300px;
-            margin-bottom: 30px;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-        
-        .qr-code {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        
-        .redirect-message {
-            color: white;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 32px;
-            font-weight: bold;
-            line-height: 1.3;
-        }
-    
-    </style>
-</head>
-<body>
-    <div class="qr-container">
-        <div class="qr-code-container">
-            <img src="/qrcode.png" alt="二维码" class="qr-code">
-        </div>
-        <div class="redirect-message">
-            Redirecting to homepage in<br><span id="countdown">10</span> seconds <br>Page not found.
-        </div>
-    </div>
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import { SITE } from "@/config";
+---
 
-    <script>
-        // 倒计时功能
-        let countdown = 10;
-        const countdownElement = document.getElementById('countdown');
-        
-        const interval = setInterval(() => {
-            countdown--;
-            countdownElement.textContent = countdown;
-            
-            if (countdown <= 0) {
-                clearInterval(interval);
-                // 重定向到首页
-                window.location.href = 'https://byte.beer/';
-            }
-        }, 1000);
-    </script>
-</body>
-</html>
+<Layout title={`404 Not Found | ${SITE.title}`}>
+  <Header />
+
+  <main
+    id="main-content"
+    class="mx-auto flex max-w-app flex-1 items-center justify-center"
+  >
+    <div class="mb-14 flex flex-col items-center justify-center">
+      <h1 class="text-9xl font-bold text-accent">404</h1>
+      <span aria-hidden="true">¯\_(ツ)_/¯</span>
+      <p class="mt-4 text-2xl sm:text-3xl">Page Not Found</p>
+      <LinkButton
+        href="/"
+        class="my-6 text-lg underline decoration-dashed underline-offset-8"
+      >
+        Go back home
+      </LinkButton>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
