@@ -1,9 +1,9 @@
 export const SITE = {
-  website: "https://undefined.today/", // replace this with your deployed domain
+  website: "https://byte.beer/", // replace this with your deployed domain
   author: "Michael",
-  profile: "https://undefined.today/about",
+  profile: "https://byte.beer/about",
   desc: "Michael 的碎碎念。",
-  title: "undefined's Blog",
+  title: "Michael Mason's Blog",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
