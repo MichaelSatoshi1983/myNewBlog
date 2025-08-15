@@ -44,7 +44,7 @@ block defer 指的是在特定的代码块结束的时候执行 defer 语句，�
 
 假设我们有下面的这段代码：
 
-```Go
+```go
 func example() {
     // 块A开始
     {
@@ -80,7 +80,7 @@ block defer 可能会在下面这些个场景使用：
 
 就比如下面的代码对比：
 
-```Go
+```go
 func example() {
     // 块A开始
     func() {
@@ -105,7 +105,7 @@ func example() {
 
 使用 block defer 机制可以避免创建这些额外的匿名函数，使代码更加简洁：
 
-```Go
+```go
 func example() {
     // 块A开始
     {
@@ -146,7 +146,7 @@ func example() {
 
 比如前面提到的需求，就可以用嵌套函数去解决：
 
-```Go
+```go
 func example() {
     // 块A开始
     func() {
@@ -177,7 +177,7 @@ func example() {
 
 在当前 Go 语言中，实现块级资源管理的主要方法是使用嵌套函数：
 
-```Go
+```go
 func main() {
     // 块A
     {
@@ -234,7 +234,7 @@ func main() {
 
 1. **手动管理资源**：在块结束前显式调用清理函数，不需要依赖defer：
 
-```Go
+```go
 func main() {
     // 块A
     {
@@ -252,7 +252,7 @@ func main() {
 
 1. **使用defer与条件判断结合**：在某些情况下，可以通过条件判断来模拟块级defer的效果：
 
-```Go
+```go
 func main() {
     // 块A
     {

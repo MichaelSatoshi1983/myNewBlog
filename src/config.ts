@@ -12,7 +12,7 @@ export const SITE = {
   showArchives: true,
   showBackButton: true, // show back button in post detail
   editPost: {
-    enabled: false,
+    enabled: true,
     text: "Edit page",
     url: "https://github.com/satnaing/astro-paper/edit/main/",
   },
