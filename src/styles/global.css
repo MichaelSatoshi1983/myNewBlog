@@ -31,22 +31,20 @@ pre.shiki * {
 
 :root,
 html[data-theme="light"] {
-  --background: #dcdcdc; /* Authentic light gray background - most 90s browsers used gray by default */
-  --foreground: #000000; /* Black text - the standard for 90s web content */
-  --accent: #0000ff; /* Classic hyperlink blue - unchanged as this was accurate */
-  --muted: #c0c0c0; /* Slightly darker gray for secondary elements */
-  --border: #808080; /* Standard gray border color */
+  --background: #f5f5f5; /* 更柔和的浅灰背景 */
+  --foreground: #222222; /* 深灰文字，比纯黑柔和 */
+  --accent: #ff6600; /* 清爽橙色作为主色调 */
+  --muted: #cccccc; /* 次要元素淡灰 */
+  --border: #b0b0b0; /* 比 muted 稍深的边框灰 */
 }
 
 html[data-theme="dark"] {
-  /* For dark theme, keeping minimal changes since dark modes weren't common in the 90s */
-  --background: #000000; /* True retro terminal style would be black */
-  --foreground: #ffffff; /* Classic green text for terminal-style displays */
-  --accent: #00ffff; /* Cyan for hyperlinks in terminal style */
-  --muted: #404040; /* Dark gray for secondary elements */
-  --border: #808080; /* Medium gray borders */
+  --background: #121212; /* 暗灰接近黑，减少眼睛疲劳 */
+  --foreground: #ffffff; /* 白色文字，清晰对比 */
+  --accent: #ff7a1c; /* 暗色模式下稍亮的橙色 */
+  --muted: #333333; /* 深灰作为次要颜色 */
+  --border: #555555; /* 中灰边框 */
 }
-
 
 @theme inline {
   --color-background: var(--background);
