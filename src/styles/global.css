@@ -5,9 +5,15 @@
 
 
 /* 全局设置 FZPXYS 字体 */
-* {
+/* * {
     font-family:'Source Han Serif CN for Display' !important;
+} */
+
+* {
+   font-family: 'MiSans' !important;
 }
+
+
 
 /* 为所有代码相关元素重置为等宽字体 */
 code, 
