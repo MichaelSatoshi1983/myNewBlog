@@ -24,11 +24,10 @@ title: "About"
 
 ## 下面是本站所提供的服务：
 
-- 网站监控： [https://status.undefined.today](https://status.undefined.today/)
-- 网站访问量统计：[https://pv.undefined.today](https://pv.undefined.today)
-- Docker 镜像： [https://docker.undefined.today](https://docker.undefined.today/)
-- PasteBin 在线剪切板： [https://paste.undefined.today](https://paste.undefined.today/)
-- Linux 中国镜像站：[https://linuxcn.undefined.today](https://linuxcn.undefined.today/)
+- 网站监控： [https://status.byte.beer](https://status.byte.beer/)
+- 网站访问量统计：[https://pv.byte.beer](https://pv.byte.beer)
+- PasteBin 在线剪切板： [https://paste.byte.beer](https://paste.byte.beer/)
+- Linux 中国镜像站：[https://linuxcn.byte.beer](https://linuxcn.byte.beer/)
 
 ## 下面是本站存在的追踪器：
 
