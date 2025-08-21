@@ -19,8 +19,8 @@ title: "About"
 - Bing Webmasters Tools： 用来将博客收录到 Microsoft Bing 搜索引擎
 - Google Search Console：用来将博客收录到 Google 搜索引擎
 - UptimeFlare： 用来搭建网站状态监控
-- Docker仓库镜像代理工具： 此项目用于建设一个帮助开发者快速拉取镜像的 Docker 镜像网站
 - PastebinWorkers：此项目用来搭建一个在线的剪切板
+- Umami: 此项目用来统计网站访问量
 
 ## 下面是本站所提供的服务：
 
