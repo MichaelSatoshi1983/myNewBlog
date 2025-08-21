@@ -11,5 +11,15 @@ title: "我的朋友们"
 
 https://suki.ink/
 </div>
+<div align="center">
+
+# GuaiZai的博客
+Tech Inspires ! ! !
+
+  <img src="https://static.byte.beer/links/guaizai.png" alt="圆形图片" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
+
+https://gz.guaitech.org
+</div>
+
 
 
