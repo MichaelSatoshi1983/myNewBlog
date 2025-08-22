@@ -9,6 +9,8 @@ tags: ["奇怪的小玩具"]
 
 **纯数学实现，无任何深度学习与模型训练成分。**
 
+项目地址：https://github.com/MichaelSatoshi1983/pixelmatch
+
 完全 deterministic，结果可复现。
 
 我暂时为他起名为黄渤孙红雷辨别器。
