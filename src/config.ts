@@ -4,7 +4,7 @@ export const SITE = {
   profile: "https://byte.beer/about",
   desc: "Michael 的碎碎念。",
   title: "Michael Mason's Blog",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "myself.webp",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
