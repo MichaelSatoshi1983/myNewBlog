@@ -10,9 +10,7 @@ export interface Props {
 
 const { noMarginTop = false } = Astro.props;
 ---
-<div style="text-align: center;">
-  <a href="https://byte.beer/1024" target="_blank">Happy 1024!</a>
-</div>
+
 <footer class:list={["w-full", { "mt-auto": !noMarginTop }]}>
 
   <Hr noPadding />
@@ -22,7 +20,9 @@ const { noMarginTop = false } = Astro.props;
 <div style="text-align: center;">
   <a href="https://icp.gov.moe/?keyword=20256989" target="_blank">萌ICP备20256989号</a>
 </div>
-
+<div style="text-align: center;">
+  <a href="https://byte.beer/1024" target="_blank">Happy 1024!</a>
+</div>
 
 
   <div
