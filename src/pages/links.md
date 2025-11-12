@@ -36,6 +36,29 @@ https://geek42.info
 </div>
 
 ***
+<div align="center">
+
+# 沉渊覆雪
+愿走向深渊的旅途里可以遇见无限美好
+
+  <img src="https://0o0.codeberg.page/img/avatar_hu_d4c2d797ac3a9b7.png" alt="圆形图片" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
+
+https://0o0.codebeg.page/
+</div>
+
+***
+<div align="center">
+
+# mail_set的铺子
+也许是我的根据地？
+
+  <img src="https://www.mailset.top/img/favicon.webp" alt="圆形图片" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
+
+https://www.mailset.top/
+</div>
+
+
+***
 
 <div align="center">
 <p>
