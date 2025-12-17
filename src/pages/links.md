@@ -9,7 +9,7 @@ title: "我的朋友们"
 
   <img src="https://q.qlogo.cn/g?b=qq&nk=1851466055&s=640" alt="圆形图片" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
 
-https://suki.ink/
+https://suki.ink
 </div>
 
 ***
@@ -43,7 +43,7 @@ https://geek42.info
 
   <img src="https://0o0.codeberg.page/img/avatar_hu_d4c2d797ac3a9b7.png" alt="圆形图片" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
 
-https://0o0.codebeg.page/
+https://0o0.codebeg.page
 </div>
 
 ***
@@ -54,7 +54,7 @@ https://0o0.codebeg.page/
 
   <img src="https://www.mailset.top/img/favicon.webp" alt="圆形图片" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
 
-https://www.mailset.top/
+https://www.mailset.top
 </div>
 
 
