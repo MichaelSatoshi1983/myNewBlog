@@ -151,53 +151,58 @@ body::before {
   position: fixed;
   left: 0;
   width: 100%;
-  height: 80px;                     /* 很粗的扫描条 */
+  height: 120px;                    /* 整体区域比较宽 */
   pointer-events: none;
   z-index: 10000;
   background: linear-gradient(
           to bottom,
-          transparent,
-          rgba(255, 255, 255, 0.03),
-          rgba(255, 255, 255, 0.06),
-          rgba(255, 255, 255, 0.06),
-          rgba(255, 255, 255, 0.03),
-          transparent
+          transparent 0%,
+          rgba(255, 255, 255, 0.01) 20%,
+          rgba(255, 255, 255, 0.02) 35%,
+          rgba(255, 255, 255, 0.04) 45%,
+          rgba(255, 255, 255, 0.15) 49%,   /* 快速变亮 */
+          rgba(255, 255, 255, 0.25) 50%,   /* 中间最亮的那条细线！ */
+          rgba(255, 255, 255, 0.15) 51%,   /* 快速变暗 */
+          rgba(255, 255, 255, 0.04) 55%,
+          rgba(255, 255, 255, 0.02) 65%,
+          rgba(255, 255, 255, 0.01) 80%,
+          transparent 100%
   );
   animation: crt-beam 25s linear infinite;
 }
 
 @keyframes crt-beam {
-  /* 等待一段时间再出现 */
   0%, 60% {
-    top: -100px;
+    top: -150px;
     opacity: 0;
   }
-  /* 慢慢显现 */
   62% {
-    top: -100px;
+    top: -150px;
     opacity: 1;
   }
-  /* 慢慢扫到底部 */
   100% {
     top: 100vh;
     opacity: 1;
   }
 }
 
-
 /* 暗色模式：荧光绿扫描条 */
 html[data-theme="dark"] body::before {
   background: linear-gradient(
           to bottom,
-          transparent,
-          rgba(57, 255, 20, 0.03),
-          rgba(57, 255, 20, 0.06),
-          rgba(57, 255, 20, 0.06),
-          rgba(57, 255, 20, 0.03),
-          transparent
+          transparent 0%,
+          rgba(57, 255, 20, 0.005) 20%,
+          rgba(57, 255, 20, 0.015) 35%,
+          rgba(57, 255, 20, 0.03) 45%,
+          rgba(57, 255, 20, 0.12) 49%,
+          rgba(57, 255, 20, 0.2) 50%,      /* 中间最亮 */
+          rgba(57, 255, 20, 0.12) 51%,
+          rgba(57, 255, 20, 0.03) 55%,
+          rgba(57, 255, 20, 0.015) 65%,
+          rgba(57, 255, 20, 0.005) 80%,
+          transparent 100%
   );
 }
-
 
 
 
