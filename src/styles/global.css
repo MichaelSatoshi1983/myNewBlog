@@ -145,33 +145,31 @@ html[data-theme="dark"] body::after {
   );
 }
 
-// ... existing code ...
-
-       /* ===== CRT 粗扫描条（偶尔出现的那道亮光） ===== */
-   body::before {
-       content: "";
-       position: fixed;
-       left: 0;
-       width: 100%;
-       height: 120px;                    /* 整体区域比较宽 */
-       pointer-events: none;
-       z-index: 10000;
-       background: linear-gradient(
-               to bottom,
-               transparent 0%,
-               rgba(255, 255, 255, 0.01) 20%,
-               rgba(255, 255, 255, 0.02) 35%,
-               rgba(255, 255, 255, 0.04) 45%,
-               rgba(255, 255, 255, 0.15) 49%,   /* 快速变亮 */
-               rgba(255, 255, 255, 0.25) 50%,   /* 中间最亮的那条细线！ */
-               rgba(255, 255, 255, 0.15) 51%,   /* 快速变暗 */
-               rgba(255, 255, 255, 0.04) 55%,
-               rgba(255, 255, 255, 0.02) 65%,
-               rgba(255, 255, 255, 0.01) 80%,
-               transparent 100%
-       );
-       animation: crt-beam 25s linear infinite;
-   }
+/* ===== CRT 粗扫描条（偶尔出现的那道亮光） ===== */
+body::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 120px;                    /* 整体区域比较宽 */
+    pointer-events: none;
+    z-index: 10000;
+    background: linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(255, 255, 255, 0.01) 20%,
+            rgba(255, 255, 255, 0.02) 35%,
+            rgba(255, 255, 255, 0.04) 45%,
+            rgba(255, 255, 255, 0.15) 49%,   /* 快速变亮 */
+            rgba(255, 255, 255, 0.25) 50%,   /* 中间最亮的那条细线！ */
+            rgba(255, 255, 255, 0.15) 51%,   /* 快速变暗 */
+            rgba(255, 255, 255, 0.04) 55%,
+            rgba(255, 255, 255, 0.02) 65%,
+            rgba(255, 255, 255, 0.01) 80%,
+            transparent 100%
+    );
+    animation: crt-beam 25s linear infinite;
+}
 
 @keyframes crt-beam {
     0%, 60% {
