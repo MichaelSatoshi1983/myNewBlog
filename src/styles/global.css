@@ -28,20 +28,21 @@ pre.shiki * {
 
 :root,
 html[data-theme="light"] {
-  --background: #e8e8f0; /* 带一点冷调紫/蓝的浅灰，Y2K 常见 */
-  --foreground: #1a1a2e; /* 深海军蓝/紫，比纯黑更有 Y2K 感 */
-  --accent: #ff00ff; /* 经典品红/洋红色 (Magenta) —— Y2K 标志色 */
-  --muted: #a0a0c0; /* 带紫调的柔和灰 */
-  --border: #8080b0; /* 偏紫的边框，呼应整体色调 */
+  --background: #fdfaf3; /* 微偏暖的米白，接近早期网页背景 */
+  --foreground: #000000; /* 纯黑正文，最大可读性 */
+  --accent: #0000ee; /* 经典默认链接蓝 */
+  --muted: #5c5c5c; /* 中性深灰，用于次级文本 */
+  --border: #b6b6b6; /* 早期网页常见的浅灰边框 */
 }
 
 html[data-theme="dark"] {
-  --background: #0d0d1a; /* 极深的靛蓝/紫黑色 */
-  --foreground: #e0e0ff; /* 冷白/淡紫白，比纯白更有氛围 */
-  --accent: #00ffff; /* 青色 (Cyan) —— Y2K 另一标志色 */
-  --muted: #3a3a5c; /* 深紫灰 */
-  --border: #5a5a8a; /* 中等紫灰边框 */
+  --background: #0b1021; /* 深蓝靛黑，保持对比 */
+  --foreground: #c8f7c5; /* 复古终端感的浅荧光绿，保证亮度 */
+  --accent: #3de0d5; /* 青绿色高亮，兼顾夜间可读性 */
+  --muted: #4a566e; /* 压低饱和的蓝灰，供次级元素 */
+  --border: #6b7690; /* 柔和中灰蓝边框，避免刺眼 */
 }
+
 
 
 
