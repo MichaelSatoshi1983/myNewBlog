@@ -151,51 +151,52 @@ body::before {
   position: fixed;
   left: 0;
   width: 100%;
-  height: 6px;                      /* 粗一点的扫描条 */
+  height: 80px;                     /* 很粗的扫描条 */
   pointer-events: none;
   z-index: 10000;
   background: linear-gradient(
           to bottom,
           transparent,
-          rgba(255, 255, 255, 0.08),
-          rgba(255, 255, 255, 0.12),
-          rgba(255, 255, 255, 0.08),
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.03),
           transparent
   );
-  animation: crt-beam 12s ease-in-out infinite;
-  opacity: 0;
+  animation: crt-beam 25s linear infinite;
 }
 
 @keyframes crt-beam {
-  /* 大部分时间都藏在屏幕外/透明 */
-  0%, 90% {
-    top: -10px;
+  /* 等待一段时间再出现 */
+  0%, 60% {
+    top: -100px;
     opacity: 0;
   }
-  /* 突然出现，快速扫下去 */
-  92% {
-    top: -10px;
+  /* 慢慢显现 */
+  62% {
+    top: -100px;
     opacity: 1;
   }
+  /* 慢慢扫到底部 */
   100% {
     top: 100vh;
-    opacity: 0.6;
+    opacity: 1;
   }
 }
+
 
 /* 暗色模式：荧光绿扫描条 */
 html[data-theme="dark"] body::before {
   background: linear-gradient(
           to bottom,
           transparent,
+          rgba(57, 255, 20, 0.03),
           rgba(57, 255, 20, 0.06),
-          rgba(57, 255, 20, 0.1),
           rgba(57, 255, 20, 0.06),
+          rgba(57, 255, 20, 0.03),
           transparent
   );
 }
-
-
 
 
 
