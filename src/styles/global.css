@@ -151,33 +151,52 @@ body::before {
     position: fixed;
     left: 0;
     width: 100%;
-    height: 120px;                    /* 整体区域比较宽 */
+    height: 200px;
     pointer-events: none;
     z-index: 10000;
-    background: linear-gradient(
+
+    /* 核心：用 mask 做出中间亮、两边淡的过渡 */
+    backdrop-filter: brightness(1.12) contrast(1.02);
+    -webkit-backdrop-filter: brightness(1.12) contrast(1.02);
+
+    /* 用 mask 让边缘自然消失 */
+    mask-image: linear-gradient(
             to bottom,
             transparent 0%,
-            rgba(255, 255, 255, 0.01) 20%,
-            rgba(255, 255, 255, 0.02) 35%,
-            rgba(255, 255, 255, 0.04) 45%,
-            rgba(255, 255, 255, 0.15) 49%,   /* 快速变亮 */
-            rgba(255, 255, 255, 0.25) 50%,   /* 中间最亮的那条细线！ */
-            rgba(255, 255, 255, 0.15) 51%,   /* 快速变暗 */
-            rgba(255, 255, 255, 0.04) 55%,
-            rgba(255, 255, 255, 0.02) 65%,
-            rgba(255, 255, 255, 0.01) 80%,
+            rgba(0,0,0,0.1) 15%,
+            rgba(0,0,0,0.3) 30%,
+            rgba(0,0,0,0.6) 42%,
+            rgba(0,0,0,1) 48%,
+            rgba(0,0,0,1) 52%,
+            rgba(0,0,0,0.6) 58%,
+            rgba(0,0,0,0.3) 70%,
+            rgba(0,0,0,0.1) 85%,
             transparent 100%
     );
-    animation: crt-beam 25s linear infinite;
+    -webkit-mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(0,0,0,0.1) 15%,
+            rgba(0,0,0,0.3) 30%,
+            rgba(0,0,0,0.6) 42%,
+            rgba(0,0,0,1) 48%,
+            rgba(0,0,0,1) 52%,
+            rgba(0,0,0,0.6) 58%,
+            rgba(0,0,0,0.3) 70%,
+            rgba(0,0,0,0.1) 85%,
+            transparent 100%
+    );
+
+    animation: crt-beam 30s linear infinite;
 }
 
 @keyframes crt-beam {
-    0%, 60% {
-        top: -150px;
+    0%, 55% {
+        top: -250px;
         opacity: 0;
     }
-    62% {
-        top: -150px;
+    58% {
+        top: -250px;
         opacity: 1;
     }
     100% {
@@ -186,25 +205,11 @@ body::before {
     }
 }
 
-/* 暗色模式：荧光绿扫描条 */
+/* 暗色模式下稍微明显一点 */
 html[data-theme="dark"] body::before {
-    background: linear-gradient(
-            to bottom,
-            transparent 0%,
-            rgba(57, 255, 20, 0.005) 20%,
-            rgba(57, 255, 20, 0.015) 35%,
-            rgba(57, 255, 20, 0.03) 45%,
-            rgba(57, 255, 20, 0.12) 49%,
-            rgba(57, 255, 20, 0.2) 50%,      /* 中间最亮 */
-            rgba(57, 255, 20, 0.12) 51%,
-            rgba(57, 255, 20, 0.03) 55%,
-            rgba(57, 255, 20, 0.015) 65%,
-            rgba(57, 255, 20, 0.005) 80%,
-            transparent 100%
-    );
+    backdrop-filter: brightness(1.18) contrast(1.03);
+    -webkit-backdrop-filter: brightness(1.18) contrast(1.03);
 }
-
-
 
 
 /* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */
